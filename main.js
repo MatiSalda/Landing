@@ -1,17 +1,41 @@
-
  // Abre el pop-up
-const openModalBtn = document.getElementById("open-modal-btn");
-const modal = document.getElementById("modal");
+const openModalBtn1 = document.getElementById("open-modal-btn1");
+const openModalBtn2 = document.getElementById("open-modal-btn2");
 
-openModalBtn.addEventListener("click", function () {
-  modal.style.display = "flex";
+const modal1 = document.getElementById("modal1");
+const modal2 = document.getElementById("modal2");
+
+
+openModalBtn1.addEventListener("click", function () {
+  
+  modal1.style.display = "flex";
+});
+
+openModalBtn2.addEventListener("click", function () {
+  
+  modal2.style.display = "flex";
 });
 
 // Cierra el pop-up
-const closeModalBtn = document.getElementsByClassName("close")[0];
+const closeModalBtn1 = document.getElementsByClassName("close")[0];
+const closeModalBtn2 = document.getElementsByClassName("close")[1];
 
-closeModalBtn.addEventListener("click", function () {
-  modal.style.display = "none";
+closeModalBtn1.addEventListener("click", function () {
+  modal1.style.display = "none";
+  
+});
+
+closeModalBtn2.addEventListener("click", function () {
+  modal2.style.display = "none";
+  
+});
+
+window.addEventListener("keydown", function (e) {
+  if(e.key=='Escape'){
+    modal1.style.display = "none";
+    modal2.style.display = "none";
+
+  }
 });
 
 
