@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landin Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
+  
+</head>
+<body>
+    <main class="contenedor">
+        <section class="info">
+            <div class="contInfo">
+                <div class="logo">M</div>
+                <div class="titulos"><h1>Hola</h1><h2>Subtitulo :D</h2></div>
+
+                <div class="botones">
+                    <div class="btn btn-1"  id="open-modal-btn">
+                        <p>BOTON1</p>
+                    </div>
+
+                    <div class="btn btn-2" id="boton2">
+                        <a href="">BOTON2</a>
+                    </div>
+                </div>
+
+                <ul class="enlaces">
+                    <li><a href="#">FB</a></li>
+                    <li><a href="#">TW</a></li>
+                    <li><a href="#">IG</a></li>
+                    <li><a href="#">WSP</a></li>
+                </ul>
+            </div>
+              
+            
+
+        </section>
+
+        
+        
+        
+        <section class="form">
+            <div class="contacto" id="contacto">
+
+                <h2>Contacto</h2>
+                <form id="form" class="formulario" name="Contacto" netlify>
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre" required>
+                    <input id="email" type="email" name="email" placeholder="E-mail" required>
+                    <input id="asunto" type="text" name="asunto" placeholder="Asunto" required>
+                    <textarea id="mensaje" cols="30" rows="6" name="mensaje" placeholder="Mensaje" required></textarea>
+                    <input type="submit" class="boton" value="Enviar">
+                </form>
+            </div>
+        </section>
+
+
+      
+        
+        <section class="info">
+            <div class="btn btn-1"  id="open-modal-btn">
+                <p>BOTON1</p>
+            </div>
+
+            <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close"><i class="fas fa-times"></i></span>
+                <div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel">
+        <img src="img/imagen1.jpg.jpg" alt="img" draggable="false">
+        <img src="img/imagen2.jpg.jfif" alt="img" draggable="false">
+        <img src="img/imagen3.jpg.jfif" alt="img" draggable="false">
+        <img src="img/imagen1.jpg.jpg" alt="img" draggable="false">
+        <img src="img/imagen2.jpg.jfif" alt="img" draggable="false">
+        <img src="img/imagen3.jpg.jfif" alt="img" draggable="false">
+     
+      </div>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+
+            </div>
+        </div>
+        
+        </section>
+        
+       
+      
+    </main>
+
+
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/3b9278d8ff.js" crossorigin="anonymous"></script>
+</body>
+</html>
