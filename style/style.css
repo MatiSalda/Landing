@@ -117,6 +117,8 @@ background-color: blue;
 
 .modal {
     display: none;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -129,25 +131,33 @@ background-color: blue;
   
   .modal-content {
     background-color: #fefefe;
-    margin: 10% auto;
+    margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
+    height: 80% ;
+    width: 80%;                                     
+    /* max-width: 600px; */
     animation-name: modalopen;
     animation-duration: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   
   .close {
-    color: #aaa;
+    color: #000000;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    position: fixed;
+    right: 12%;
+    top: 11%;
   }
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: #000000;
     text-decoration: none;
     cursor: pointer;
   }
@@ -163,13 +173,13 @@ background-color: blue;
   
 
 
-  modal-content{
+  .galeria{
     display: flex;
     padding: 0 35px;
-    min-height: 100vh;
+   
     align-items: center;
     justify-content: center;
-    background: #343F4F;
+    
   }
   .wrapper{
     display: flex;
@@ -195,7 +205,7 @@ background-color: blue;
     transform: translateY(-50%) scale(0.9);
   }
   .wrapper i:hover{
-    background: #f2f2f2;
+    background: #ffffff;
   }
   .wrapper i:first-child{
     left: -22px;

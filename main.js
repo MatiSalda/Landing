@@ -4,7 +4,7 @@ const openModalBtn = document.getElementById("open-modal-btn");
 const modal = document.getElementById("modal");
 
 openModalBtn.addEventListener("click", function () {
-  modal.style.display = "block";
+  modal.style.display = "flex";
 });
 
 // Cierra el pop-up
