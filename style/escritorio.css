@@ -3,6 +3,12 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-weight: 700;
+}
+body{
+  background-image: url('../img/fondo.jpg');
+  background-size: cover;
 }
 
 
@@ -10,69 +16,119 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 
+.logo{
+  
+  size: 40px;
+  font-size: xx-large
+}
+
 .info{
-    background-color: rgb(250, 168, 168);
+  
     height: 100vh;
     width: 130vh;
     display: flex;
     justify-content:center ;
 }
 
+
+
 .contInfo{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    width: 50%;
-height: 100vh;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+    text-align: center;
 }
 
+.contenido{
+  margin: 15px;
+ 
+}
 .form{
     width: 70vh;
     height: 100vh;
-    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+  
 }
 
 .contacto{
     display: flex;   
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-justify-content: center;
+    justify-content: center;
+    height: 70vh;
+    width: 70%;
+    border-radius: 10px;
+    background-color: rgb(135, 199, 199);
+    -webkit-box-shadow: 5px 4px 34px -7px rgb(0, 0, 0);
+    -moz-box-shadow: 5px 4px 34px -7px rgb(0, 0, 0);
+    box-shadow: 5px 4px 34px -7px rgb(0, 0, 0);
+/* From https://css.glass */
+background: rgba(154, 154, 154, 0.27);
+border-radius: 16px;
+
+backdrop-filter: blur(5.4px);
+-webkit-backdrop-filter: blur(5.4px);
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    align-items: center;
+    width: 80%;
 }
-.formulario input, .formulario textarea{
 
-
+.formulario input{
 margin: 1rem;
-border: solid black 1px;
-border-radius: 6px;
+padding: 8px;
+border: 0px;
+border-radius: 4px;
 text-align: center;
 }
 
-
-
-.contInfo{
-width: 50%;
-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
+.formulario textarea{
+  
+  margin: 1rem;
+padding: 5px;
+border: solid rgb(255, 255, 255) 1px;
+border-radius: 4px;
+text-align: center;
 }
+
+.btnEnviar{
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  background-color: #607B84;
+  border: 1px solid #607B84;
+  color: white;
+  
+}
+
+
 
 .titulos{
     text-align: center;
 }
+
+.titulo{
+  margin: 10px;
+  font-size: 50px;
+}
+
+.subtitulo{
+  margin: 10px;
+  font-size: 25px;
+}
+
 .botones{
 display: flex;
 }
@@ -80,26 +136,32 @@ display: flex;
 .btn{
     width: 120px;
     height: 50px;
-    background-color: red;
+    background-color: #607B84;
     border-radius: 10px;
-    margin: 10px;
+    margin: 30px 10px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-box-shadow: 0px 0px 16px -7px rgba(52, 54, 117, 1);
+    -moz-box-shadow: 0px 0px 16px -7px rgba(52, 54, 117, 1);
+    box-shadow: 0px 0px 16px -7px rgba(52, 54, 117, 1);
+}
+
+.tituloBtn{
+  color: white;
 }
 
 .btn a{
 text-decoration: none;
 color: black;
 }
-.btn-1 {
-background-color: blue;
-}
+
 
 .enlaces{
     display: flex;
     list-style: none;
+    margin-bottom: 0px;
 }
 
 
@@ -128,13 +190,14 @@ background-color: blue;
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
+    
   }
   
   .modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border-radius: 15px;
     height: 80% ;
     width: 80%;                                     
     /* max-width: 600px; */
@@ -144,6 +207,7 @@ background-color: blue;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
   }
   
   .close {
@@ -161,14 +225,28 @@ background-color: blue;
     color: #000000;
     text-decoration: none;
     cursor: pointer;
+    
   }
   
   @keyframes modalopen {
     from {
       opacity: 0;
+      
     }
     to {
       opacity: 1;
+      
+    }
+  }
+  
+  @keyframes modalclose {
+    from {
+      opacity: 1;
+      
+    }
+    to {
+      opacity: 0;
+      
     }
   }
   
@@ -177,7 +255,6 @@ background-color: blue;
   .galeria{
     display: flex;
     padding: 0 35px;
-   
     align-items: center;
     justify-content: center;
     
@@ -206,7 +283,7 @@ background-color: blue;
     transform: translateY(-50%) scale(0.9);
   }
   .wrapper i:hover{
-    background: #686868;
+    background: #000000;
   }
   .wrapper i:first-child{
     left: -50px;

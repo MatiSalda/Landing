@@ -1,47 +1,61 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+    font-weight: 300;
+    text-align: center;
 }
 
+body{
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+  }
 
 .contenedor{
     display: flex;
     flex-direction: column;
 }
 
+.logo{
+  
+  size: 40px;
+  font-size: xx-large
+}
 
 .info{
-    background-color: rgb(250, 168, 168);
     height: 100vh;
-    
     display: flex;
     justify-content:center ;
 }
 
 .contInfo{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 50%;
-height: 100vh;
+    width: 75%;
+    height: 100vh;
 }
 
 .form{
-
     height: 100vh;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloForm{
+  color: white;
 }
 
 .contacto{
     display: flex;   
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-justify-content: center;
+    
+    justify-content: center;
+    
 }
 
 .formulario{
@@ -49,6 +63,7 @@ justify-content: center;
     flex-direction: column;
     margin: 10px;
 }
+
 .formulario input, .formulario textarea{
 
 
@@ -60,15 +75,6 @@ text-align: center;
 
 
 
-.contInfo{
-width: 50%;
-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-}
-
 .titulos{
     text-align: center;
 }
@@ -77,23 +83,28 @@ display: flex;
 }
 
 .btn{
-    width: 120px;
-    height: 50px;
-    background-color: red;
-    border-radius: 10px;
-    margin: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 120px;
+  height: 50px;
+  background-color: #607B84;
+  border-radius: 10px;
+  margin: 30px 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 16px -7px rgba(52, 54, 117, 1);
+  -moz-box-shadow: 0px 0px 16px -7px rgba(52, 54, 117, 1);
+  box-shadow: 0px 0px 16px -7px rgba(52, 54, 117, 1);
 }
 
 .btn a{
 text-decoration: none;
 color: black;
 }
-.btn-1 {
-background-color: blue;
+
+
+.texto{
+  width: 100%;
 }
 
 .enlaces{
@@ -257,6 +268,9 @@ background-color: blue;
         width: 100%;
         background-color: rgba(202, 252, 248, 0.212);
     }
+
+
+    
   }
 
 

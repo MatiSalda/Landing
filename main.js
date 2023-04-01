@@ -101,4 +101,3 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
 
-

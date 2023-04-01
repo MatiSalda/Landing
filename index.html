@@ -7,9 +7,10 @@
     <title>Landin Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/escritorio.css" media="screen and (min-width: 724px)">
+    <link rel="stylesheet" href="style/style.css">
 
     <link
     rel="stylesheet"
@@ -23,26 +24,32 @@
             
             <div class="contInfo">
                 
-                <div class="logo">M</div>
-                <div class="titulos"><h1>Hola</h1><h2>Subtitulo :D</h2></div>
+                <div class="logo contenido"><i class="fa-solid fa-plane-departure"></i><br><h3>HOTEL?TRIVAGO</h3></div>
+                <div class="titulos"><h1 class="titulo">Viajes a todo el pais!</h1><h2 class="subtitulo">Agencia de viajes Trivago</h2></div>
+                <div class="texto"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tenetur magni voluptateLorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tenetur magni voluptatem, eligendi voluptates vero eveni</p></div>
 
-                <div class="botones">
+                <div class="botones contenido">
                     <div class="btn btn-1"  id="open-modal-btn1">
-                        <p>BOTON1</p>
+                        <h4 class="tituloBtn">INFO</h4>
                     </div>
         
                     <div id="modal1" class="modal modal1">
                         <span class="close" id="close1"><i class="fas fa-times"></i></span>
-                    <div class="modal-content">
+                    <div class="modal-content modalInfo">
                         <h1>Hola!</h1>
                         <h3>Como te va? todo bien?</h3>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex fugit, perferendis nostrum vero dicta amet saepe tempore suscipit, distinctio necessitatibus alias, ut sunt dolorem? Possimus, assumenda iure, blanditiis molestias quidem in dolorem, dicta praesentium optio maiores et quas. Aut tenetur similique culpa et beatae pariatur, amet maiores cupiditate illo assumenda.
         
                     </div>
+
                     </div>
     
                     <div class="btn btn-2"  id="open-modal-btn2">
-                        <p>BOTON2</p>
+                        <h4 class="tituloBtn">GALERIA</h4>
+                    </div>
+
+                    <div class="btn btn-2"  id="open-modal-btn2">
+                        <a href="#form"><h4 class="tituloBtn">CONTACTO</h4></a>
                     </div>
         
                     <div id="modal2" class="modal modal2">
@@ -69,11 +76,11 @@
                 </div>
                 
 
-                <ul class="enlaces">
-                    <li><a href="#">FB</a></li>
-                    <li><a href="#">TW</a></li>
-                    <li><a href="#">IG</a></li>
-                    <li><a href="#">WSP</a></li>
+                <ul class="enlaces contenido">
+                    <li><a href="#"><i class="fa-brands fa-twitter  fa-2xl" style="color: #000000;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook  fa-2xl" style="color: #000000;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok  fa-2xl" style="color: #000000;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram  fa-2xl" style="color: #000000;"></i></a></li>
                 </ul>
             </div>
               
@@ -87,22 +94,17 @@
         <section class="form">
             <div class="contacto" id="contacto">
 
-                <h2>Contacto</h2>
-                <form id="form" class="formulario" name="Contacto" netlify>
+                <h2 class="tituloForm">CONSULTANOS</h2>
+                <form  id="form" class="formulario" name="Contacto" netlify>
                     <input id="nombre" type="text" name="nombre" placeholder="Nombre" required>
                     <input id="email" type="email" name="email" placeholder="E-mail" required>
                     <input id="asunto" type="text" name="asunto" placeholder="Asunto" required>
-                    <textarea id="mensaje" cols="30" rows="6" name="mensaje" placeholder="Mensaje" required></textarea>
-                    <input type="submit" class="boton" value="Enviar">
+                    <textarea id="mensaje" cols="22" rows="3" name="mensaje" placeholder="Mensaje" required></textarea>
+                    <input type="submit" class="boton btnEnviar" value="Enviar">
                 </form>
             </div>
         </section>
 
-
-      
-        
-       
-      
     </main>
 
 
