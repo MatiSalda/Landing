@@ -190,10 +190,14 @@ color: black;
     font-size: 28px;
     font-weight: bold;
     position: fixed;
-    right: 12%;
-    top: 11%;
+    right: 8%;
+    top: 3%;
   }
   
+  .closeGalery{
+    color: white;
+  }
+
   .close:hover,
   .close:focus {
     color: #000000;
@@ -294,9 +298,12 @@ color: black;
     .modal-content{
         height: 100%;
         width: 100%;
-        background-color: rgba(202, 252, 248, 0.212);
+        background-color: rgb(255, 255, 255);
     }
 
+    .modal-content2{
+      background-color: #88888859;
+    }
     .btn{
       width: 95px;
       color: white;
